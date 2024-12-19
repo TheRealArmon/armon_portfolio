@@ -4,19 +4,14 @@ import Image from 'next/image'
 export function AboutSection() {
   return (
     <section id="about" className="py-20 px-4 bg-[#1a1f2e]">
-      <div className="max-w-6xl mx-auto flex items-center gap-8">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
         <div className="flex-shrink-0">
-          {/* <img 
-            src="@/assets/img/armon-hakimi.jpg?height=200&width=200" 
-            alt="Profile" 
-            className="rounded-full w-48 h-48 object-cover"
-          /> */}
           <Image
             src="/img/armon-hakimi.jpg"
             alt="Profile"
             width={200}
             height={200}
-            className="rounded-full object-cover"
+            className="rounded-full w-48 h-48 object-cover"
           />
         </div>
         <div>

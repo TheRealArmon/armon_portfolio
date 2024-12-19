@@ -13,7 +13,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, role, date, description, tags, icon }: ProjectCardProps) {
   return (
-    <div className="bg-[#232936] rounded-lg p-6">
+    <div className="bg-[#1a1f2e] rounded-lg p-6">
       <div className="flex items-start justify-between mb-4">
         <div>
           <div className="flex items-center gap-2 mb-1">
