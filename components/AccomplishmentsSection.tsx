@@ -91,7 +91,9 @@ export function AccomplishmentsSection() {
   return (
     <section id="Accomplishments" className="py-20 px-4 bg-[#1a1f2e]">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold text-center mb-10">Achievements</h2>
+        <h2 className="text-5xl font-bold text-center mb-10">
+          Accomplishments
+        </h2>
         <div className="flex justify-center items-center mb-6">
           <div className="join bg-gray-800 rounded-lg p-1">
             <button
