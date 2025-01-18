@@ -1,42 +1,80 @@
 "use client";
 
+import { url } from "inspector";
 import { AccomplishmentCard } from "./AccomplishmentCard";
 import { useState } from "react";
 
 const category = {
-  cert: "Certification",
+  cert: "Certifications",
   other: "Other",
 };
 
 export function AccomplishmentsSection() {
   const accomplishments = [
     {
-      title: "Kubestronaut",
-      organization: "CNCF",
-      date: "May 2024 - May 2026",
+      title: "Kubernetes",
+      organization: "Cloud Native Computing Foundation",
       description:
-        "Title given upon completion of all Kubernetes certifications!",
+        "I'm a certified Kubestronaut! Means I've done all the kubernetes certifications:)",
+      url: "https://www.credly.com/badges/c2bea2a4-d964-476c-8b1e-a48259d34fb9",
+      date: "",
       category: category.cert,
     },
     {
       title: "Linux",
-      organization: "CNCF",
-      date: "Date",
-      description: "Did all linux certifications",
+      organization: "Cloud Native Computing Foundation",
+      url: "https://www.credly.com/badges/07485790-0631-433e-9d93-a97c2a618840",
+      description:
+        "Did all the Linux certifications: IT Associate, Cloud Technician, and System Administrator.",
+      date: "",
       category: category.cert,
     },
     {
       title: "ArgoCD",
-      organization: "CNCF",
-      date: "Date",
-      description: "Did an ArgoCD certification.",
+      organization: "Cloud Native Computing Foundation",
+      url: "https://www.credly.com/badges/0e235591-60f0-4dab-af4a-e53077507e86",
+      description: "Certified Argo Project Associate (CAPA).",
+      date: "",
       category: category.cert,
     },
     {
       title: "Prometheus",
-      organization: "CNCF",
-      date: "Date",
-      description: "Did a Prometheus certification.",
+      organization: "Cloud Native Computing Foundation",
+      url: "https://www.credly.com/badges/8c3c7072-2673-432d-b9ee-573d5ab5b2fb",
+      description: "Prometheus Certified Associate (PCA)",
+      date: "",
+      category: category.cert,
+    },
+    {
+      title: "GitOps",
+      organization: "Cloud Native Computing Foundation",
+      url: "https://www.credly.com/badges/c4f1b579-e124-44ae-a615-7a75abd84cde",
+      description: "Certified GitOps Associate (CGOA)",
+      date: "",
+      category: category.cert,
+    },
+    {
+      title: "Scrum",
+      organization: "Scrum.org",
+      url: "https://www.credly.com/badges/9211ba52-ce36-4256-a0ed-d0d75e85c58e",
+      description:
+        "Scrum Master 1 & 2, Scrum Product Owner 1, and Scrum Developer.",
+      date: "",
+      category: category.cert,
+    },
+    {
+      title: "Python",
+      organization: "Python Institute",
+      url: "https://www.credly.com/badges/a0435098-6741-44b3-b311-01804b5da1a3",
+      description: "Associate Python Programmer (PCAP)",
+      date: "",
+      category: category.cert,
+    },
+    {
+      title: "Databricks",
+      organization: "Databricks",
+      description: "Data Engineer Associate",
+      date: "",
       category: category.cert,
     },
   ];
@@ -91,7 +129,7 @@ export function AccomplishmentsSection() {
             </button>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {filteredAccomplishments.map((accomplishment, index) => (
             <AccomplishmentCard key={index} {...accomplishment} />
           ))}

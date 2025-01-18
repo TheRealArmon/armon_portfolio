@@ -10,8 +10,9 @@ import {
 interface AccomplishmentCardProps {
   title: string;
   organization: string;
-  date: string;
   description: string;
+  date?: string;
+  url?: string;
 }
 
 export function AccomplishmentCard({
@@ -19,27 +20,34 @@ export function AccomplishmentCard({
   organization,
   date,
   description,
+  url,
 }: AccomplishmentCardProps) {
   return (
-    <Card className="bg-[#232936] border-[#2D9CDB] border-t-4">
-      <CardHeader>
-        <CardTitle className="text-xl font-semibold text-white">
-          {title}
-        </CardTitle>
-        <p className="text-[#2D9CDB]">
-          {organization} | {date}
-        </p>
-      </CardHeader>
-      <CardContent>
-        <p className="text-gray-300">{description}</p>
-      </CardContent>
-      <CardFooter>
-        <Button
-          variant="outline"
-          className="text-white hover:text-white bg-blue-500 hover:bg-blue-600 border-blue-400 border-opacity-50"
-        >
-          View in credly
-        </Button>
+    <Card className="bg-[#232936] border-[#2D9CDB] border-t-4 flex flex-col justify-between h-full">
+      <div>
+        <CardHeader>
+          <CardTitle className="text-xl font-semibold text-white">
+            {title}
+          </CardTitle>
+          <p className="text-[#2D9CDB]">
+            {organization} {date ? <span>| {date}</span> : null}
+          </p>
+        </CardHeader>
+        <CardContent>
+          {description && <p className="text-gray-300">{description}</p>}
+        </CardContent>
+      </div>
+      <CardFooter className="mt-auto">
+        {url && (
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-white bg-blue-500 hover:bg-blue-600 border border-blue-400 border-opacity-50 rounded-lg px-4 py-2 inline-block text-center"
+          >
+            View badge
+          </a>
+        )}
       </CardFooter>
     </Card>
   );

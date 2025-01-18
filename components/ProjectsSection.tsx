@@ -1,5 +1,5 @@
-import { ProjectCard } from './ProjectCard'
-import { Icons } from '@/components/icons'
+import { ProjectCard } from "./ProjectCard";
+import { Icons } from "@/components/icons";
 
 export function ProjectsSection() {
   return (
@@ -11,22 +11,20 @@ export function ProjectsSection() {
           <ProjectCard
             title="This website!"
             role="Developer"
-            date="December 2024 - Present"
             description="Made this website in Next.js 15, mainly as a way of practicing front-end.
             Mainly meant to act as a portfolio page, but I might also add blog posts or other features down the line."
-            tags={['hobby', 'next.js 15', 'tailwind']}
+            tags={["next.js 15", "tailwind", "git"]}
             icon={<Icons.GlobalOutlined className="w-6 h-6 text-blue-400" />}
           />
           <ProjectCard
             title="Youtube videos"
             role="Filming, editing"
-            date="N.A."
-            description="Vague description that can essentially mean anything."
-            tags={['hobby', 'python']}
+            description="I create videos in my free-time! Not really technically relevant but fun nonetheless:)"
+            tags={["hobby", "davinci resolve"]}
             icon={<Icons.SmileOutlined className="w-6 h-6 text-blue-400" />}
           />
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-import { Mail, Github, Linkedin } from 'lucide-react'
-import Image from 'next/image'
+import { Mail, Github, Linkedin } from "lucide-react";
+import Image from "next/image";
 
 export function AboutSection() {
   return (
@@ -22,19 +22,29 @@ export function AboutSection() {
             </h2>
           </div>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl">
-            Certified tech geek! Incredibly fond of learning new tech or just learning in general.
-            Currently working mostly with Kubernetes and others tools from the CNCF ecosystem.
+            Certified tech geek! Incredibly fond of learning new tech or just
+            learning in general. Currently working mostly with Kubernetes and
+            others tools from the CNCF ecosystem.
           </p>
           <div className="flex gap-6">
-            <a href="mailto:your.email@example.com" className="text-gray-400 hover:text-[#2D9CDB] transition-colors">
+            <a
+              href="mailto:armonah2@gmail.com"
+              className="text-gray-400 hover:text-[#2D9CDB] transition-colors"
+            >
               <Mail className="w-6 h-6" />
               <span className="sr-only">Email</span>
             </a>
-            <a href="https://github.com/yourusername" className="text-gray-400 hover:text-[#2D9CDB] transition-colors">
+            <a
+              href="https://github.com/TheRealArmon/"
+              className="text-gray-400 hover:text-[#2D9CDB] transition-colors"
+            >
               <Github className="w-6 h-6" />
               <span className="sr-only">GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/yourusername" className="text-gray-400 hover:text-[#2D9CDB] transition-colors">
+            <a
+              href="https://www.linkedin.com/in/armon-hakimi"
+              className="text-gray-400 hover:text-[#2D9CDB] transition-colors"
+            >
               <Linkedin className="w-6 h-6" />
               <span className="sr-only">LinkedIn</span>
             </a>
@@ -42,6 +52,5 @@ export function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
