@@ -29,15 +29,20 @@ export function ProjectCard({
         </div>
       </div>
       <p className="mb-4">{description}</p>
-      <div className="flex items-center justify-between mt-auto">
-        <div className="flex gap-2">
+      <div className="flex flex-wrap sm:flex-nowrap items-center justify-between mt-auto gap-4">
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2">
           {tags.map((tag, index) => (
             <Badge key={index} variant="secondary">
               {tag}
             </Badge>
           ))}
         </div>
-        <Button variant="link" className="text-blue-400">
+        {/* Button */}
+        <Button
+          variant="link"
+          className="text-blue-400 w-full sm:w-auto text-center"
+        >
           This button doesn&#39;t do anything yet:)
         </Button>
       </div>
