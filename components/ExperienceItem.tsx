@@ -1,5 +1,3 @@
-import { MapPin } from "lucide-react";
-
 interface ExperienceItemProps {
   company: string;
   location: string;
