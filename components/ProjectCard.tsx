@@ -38,7 +38,7 @@ export function ProjectCard({
           ))}
         </div>
         <Button variant="link" className="text-blue-400">
-          This button doesn't do anything yet:)
+          <span>This button doesn't do anything yet:)</span>
         </Button>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -38,7 +38,7 @@ export function AccomplishmentCard({
         </CardContent>
       </div>
       <CardFooter className="mt-auto">
-        {url && (
+        {url ? (
           <a
             href={url}
             target="_blank"
@@ -47,7 +47,7 @@ export function AccomplishmentCard({
           >
             View badge
           </a>
-        )}
+        ) : null}
       </CardFooter>
     </Card>
   );
