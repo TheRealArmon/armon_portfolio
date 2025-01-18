@@ -1,6 +1,5 @@
 "use client";
 
-import { url } from "inspector";
 import { AccomplishmentCard } from "./AccomplishmentCard";
 import { useState } from "react";
 
