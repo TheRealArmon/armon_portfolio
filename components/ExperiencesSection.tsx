@@ -8,82 +8,52 @@ export function ExperiencesSection() {
       company: "Sopra Steria",
       location: "Oslo",
       position: "IT-Consultant",
-      date: "August 2023 - Present",
-      description: "I did a great job I promise!!!",
+      date: "August 2023 - February 2025",
+      description:
+        "Did back-end work for a start-up for half a year, then worked with creating AI applications for various customers.",
+      showDescription: false,
       responsibilities: [
-        "AI stuff",
-        "Azure stuff",
-        "Conducting technical interviews in Java and Python",
+        "Back-end development",
+        "LLM web app development",
+        "Python",
+        "Azure",
+        "Also conducted technical interviews in Java and Python",
       ],
     },
     {
       company: "Sopra Steria",
       location: "Oslo",
-      position: "Machine learning intern",
+      position: "Machine learning internship",
       date: "June 2022 - July 2022",
+      description: "Had an internship.",
+      showDescription: true,
       responsibilities: ["Python", "Databricks", "Azure"],
     },
     {
       company: "Hydro",
       location: "Øvre Årdal",
-      position: "Data analyst intern",
+      position: "Data analyst internship",
       date: "June 2021 - August 2021",
-      description: "aluminium, or aluminum. never understood the difference🤷‍♂️",
-      responsibilities: ["Python", "Microsoft SQL Server"],
+      description: "Had another internship🤷‍♂️",
+      showDescription: false,
+      responsibilities: ["Python", "Data analysis", "Microsoft SQL Server"],
     },
     {
       company: "Hydro",
       location: "Øvre Årdal",
-      position: "Data analyst intern",
+      position: "Data analyst internship",
       date: "June 2021 - August 2021",
-      description: "aluminium, or aluminum. never understood the difference🤷‍♂️",
-      responsibilities: ["Python", "Microsoft SQL Server"],
+      description: "Had another internship🤷‍♂️",
+      showDescription: false,
+      responsibilities: ["Python", "Data analysis", "Microsoft SQL Server"],
     },
     {
       company: "Hydro",
       location: "Øvre Årdal",
-      position: "Data analyst intern",
+      position: "Data analyst internship",
       date: "June 2021 - August 2021",
-      description: "aluminium, or aluminum. never understood the difference🤷‍♂️",
-      responsibilities: ["Python", "Microsoft SQL Server"],
-    },
-    {
-      company: "Sopra Steria",
-      location: "Oslo",
-      position: "Machine learning intern",
-      date: "June 2022 - July 2022",
-      responsibilities: ["Python", "Databricks", "Azure"],
-    },
-    {
-      company: "Sopra Steria",
-      location: "Oslo",
-      position: "Machine learning intern",
-      date: "June 2022 - July 2022",
-      responsibilities: ["Python", "Databricks", "Azure"],
-    },
-    {
-      company: "Sopra Steria",
-      location: "Oslo",
-      position: "IT-Consultant",
-      date: "August 2023 - Present",
-      description: "I did a great job I promise!!!",
-      responsibilities: [
-        "AI stuff",
-        "Azure stuff",
-        "Conducting technical interviews in Java and Python",
-      ],
-    },
-    {
-      company: "Sopra Steria",
-      location: "Oslo",
-      position: "IT-Consultant",
-      date: "August 2023 - Present",
-      description: "I did a great job I promise!!!",
-      responsibilities: [
-        "AI stuff",
-        "Azure stuff",
-        "Conducting technical interviews in Java and Python",
-      ],
+      description: "Had another internship🤷‍♂️",
+      responsibilities: ["Python", "Data analysis", "Microsoft SQL Server"],
     },
   ];
 
@@ -99,27 +69,9 @@ export function ExperiencesSection() {
             {experiences.map((experience, index) => (
               <div
                 key={index}
-                className="carousel-item flex-shrink-0 snap-center w-[300px] flex justify-center"
+                className="carousel-item flex-shrink-0 snap-center flex justify-center"
               >
-                <div className="bg-[#1a1f2e] rounded-lg p-6 border-2 border-gray-700 w-[300px] h-[350px] flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-2xl font-bold">{experience.company}</h3>
-                    <p className="text-gray-400 text-sm mb-2">
-                      {experience.location} | {experience.position}
-                    </p>
-                    <p className="text-gray-400 text-sm mb-4">
-                      {experience.date}
-                    </p>
-                    <p className="text-gray-300 mb-4">
-                      {experience.description || "No description provided."}
-                    </p>
-                  </div>
-                  <ul className="list-disc list-inside text-gray-400">
-                    {experience.responsibilities.map((item, idx) => (
-                      <li key={idx}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
+                <ExperienceItem key={index} {...experience} />
               </div>
             ))}
           </div>
