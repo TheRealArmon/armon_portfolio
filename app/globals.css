@@ -10,6 +10,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .border-border {
+    border-color: #ccc; /* Example color */
+  }
 }
 
 @layer base {
