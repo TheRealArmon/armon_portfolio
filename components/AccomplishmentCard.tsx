@@ -1,23 +1,23 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
-interface AchievementCardProps {
+interface AccomplishmentCardProps {
   title: string
   organization: string
   date: string
   description: string
 }
 
-export function AchievementCard({
+export function AccomplishmentCard({
   title,
   organization,
   date,
   description
-}: AchievementCardProps) {
+}: AccomplishmentCardProps) {
   return (
-    <Card className="bg-[#232936] border-[#2D9CDB] border-t-2">
+    <Card className="bg-[#232936] border-[#2D9CDB] border-t-4">
       <CardHeader>
-        <CardTitle className="text-xl font-semibold">{title}</CardTitle>
+        <CardTitle className="text-xl font-semibold text-white">{title}</CardTitle>
         <p className="text-[#2D9CDB]">{organization} • {date}</p>
       </CardHeader>
       <CardContent>

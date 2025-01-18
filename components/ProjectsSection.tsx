@@ -18,9 +18,9 @@ export function ProjectsSection() {
             icon={<Icons.GlobalOutlined className="w-6 h-6 text-blue-400" />}
           />
           <ProjectCard
-            title="Temporary placeholder"
-            role="something"
-            date="sometime"
+            title="Youtube videos"
+            role="Filming, editing"
+            date="N.A."
             description="Vague description that can essentially mean anything."
             tags={['hobby', 'python']}
             icon={<Icons.SmileOutlined className="w-6 h-6 text-blue-400" />}

@@ -1,7 +1,7 @@
-import { AchievementCard } from './AchievementCard'
+import { AccomplishmentCard } from './AccomplishmentCard'
 
-export function AchievementsSection() {
-  const Achievements = [
+export function AccomplishmentsSection() {
+  const Accomplishments = [
     {
       title: "Kubestronaut",
       organization: "CNCF",
@@ -29,13 +29,12 @@ export function AchievementsSection() {
   ]
 
   return (
-    <section id="Achievements" className="py-20 px-4 bg-[#1a1f2e]">
+    <section id="Accomplishments" className="py-20 px-4 bg-[#1a1f2e]">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold text-center mb-16">Achievements</h2>
-
+        <h2 className="text-5xl font-bold text-center mb-16">Accomplishments</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          {Achievements.map((Achievement, index) => (
-            <AchievementCard key={index} {...Achievement} />
+          {Accomplishments.map((Accomplishment, index) => (
+            <AccomplishmentCard key={index} {...Accomplishment} />
           ))}
         </div>
       </div>

@@ -3,7 +3,7 @@ import { AboutSection } from '@/components/AboutSection'
 import { ProjectsSection } from '@/components/ProjectsSection'
 import { SkillsSection } from '@/components/SkillsSection'
 import { ExperiencesSection } from '@/components/ExperiencesSection'
-import { AchievementsSection } from '@/components/AchievementsSection'
+import { AccomplishmentsSection } from '@/components/AccomplishmentsSection'
 import { Mail, Github, Linkedin } from 'lucide-react'
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <ProjectsSection />
       <SkillsSection />
       <ExperiencesSection />
-      <AchievementsSection />
+      <AccomplishmentsSection />
       <footer className="bg-[#232936] py-8">
         <div className="max-w-6xl mx-auto px-4 flex justify-center space-x-6">
           <a href="mailto:your.email@example.com" className="text-gray-400 hover:text-[#2D9CDB] transition-colors">
