@@ -4,11 +4,27 @@ import { ExperienceItem } from "./ExperienceItem";
 
 export function ExperiencesSection() {
   const experiences = [
+    // {
+    //   company: "Norske Helsenett",
+    //   location: "Oslo",
+    //   position: "Kubernetes developer",
+    //   date: "March 2025 - Present",
+    //   description:
+    //     "Responsible for moving microservices onto Kubernetes.",
+    //   showDescription: false,
+    //   responsibilities: [
+    //     "ArgoCD",
+    //     "Prometheus",
+    //     "CI/CD",
+    //     "Kubernetes",
+    //     "Linux",
+    //   ],
+    // },
     {
       company: "Sopra Steria",
       location: "Oslo",
       position: "IT-Consultant",
-      date: "August 2023 - February 2025",
+      date: "August 2023 - Present",
       description:
         "Did back-end work for a start-up for half a year, then worked with creating AI applications for various customers.",
       showDescription: false,
@@ -28,32 +44,6 @@ export function ExperiencesSection() {
       description: "Had an internship.",
       showDescription: true,
       responsibilities: ["Python", "Databricks", "Azure"],
-    },
-    {
-      company: "Hydro",
-      location: "Øvre Årdal",
-      position: "Data analyst internship",
-      date: "June 2021 - August 2021",
-      description: "Had another internship🤷‍♂️",
-      showDescription: false,
-      responsibilities: ["Python", "Data analysis", "Microsoft SQL Server"],
-    },
-    {
-      company: "Hydro",
-      location: "Øvre Årdal",
-      position: "Data analyst internship",
-      date: "June 2021 - August 2021",
-      description: "Had another internship🤷‍♂️",
-      showDescription: false,
-      responsibilities: ["Python", "Data analysis", "Microsoft SQL Server"],
-    },
-    {
-      company: "Hydro",
-      location: "Øvre Årdal",
-      position: "Data analyst internship",
-      date: "June 2021 - August 2021",
-      description: "Had another internship🤷‍♂️",
-      responsibilities: ["Python", "Data analysis", "Microsoft SQL Server"],
     },
   ];
 

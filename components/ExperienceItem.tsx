@@ -27,9 +27,9 @@ export function ExperienceItem({
           {location} | {position}
         </p>
         <p className="text-gray-400 text-sm mb-4">{date}</p>
-        {showDescription && <p className="text-gray-300 mb-4">{description}</p>}
+        {showDescription && <p className="text-gray-200 mb-4">{description}</p>}
       </div>
-      <ul className="list-disc list-inside text-gray-400">
+      <ul className="list-disc list-inside text-gray-200">
         {responsibilities.map((item, idx) => (
           <li key={idx}>{item}</li>
         ))}
