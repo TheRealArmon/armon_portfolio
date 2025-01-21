@@ -24,7 +24,7 @@ export function AboutSection() {
           <p className="text-xl text-gray-300 mb-8 max-w-2xl">
             Certified tech geek! Incredibly fond of learning new tech or just
             learning in general. Currently working mostly with Kubernetes and
-            others tools from the CNCF ecosystem.
+            other tools from the CNCF ecosystem.
           </p>
           <div className="flex gap-6">
             <a
