@@ -1,4 +1,3 @@
-import { ExperiencesSection } from "./ExperiencesSection";
 import { ProjectCard } from "./ProjectCard";
 import { Icons } from "@/components/icons";
 
