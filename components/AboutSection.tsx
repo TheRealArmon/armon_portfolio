@@ -18,7 +18,8 @@ export function AboutSection() {
           <h1 className="text-5xl font-bold mb-4">Armon Hakimi</h1>
           <div className="mb-6">
             <h2 className="text-2xl">
-              Engineer at <span className="text-[#2D9CDB]">Sopra Steria</span>
+              Platform engineer at{" "}
+              <span className="text-[#2D9CDB]">Norsk Helsenett</span>
             </h2>
           </div>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl">

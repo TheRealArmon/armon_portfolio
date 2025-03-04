@@ -9,7 +9,7 @@ export function ProjectsSection() {
       description:
         "Made this website in Next.js 15, mainly as a way of practicing front-end.\
       Meant to act as a portfolio page, but I might also add blog posts or other features down the line.",
-      tags: ["next.js 15", "tailwind", "git"],
+      tags: ["next.js 15", "tailwind"],
       icon: <Icons.GlobalOutlined className="w-6 h-6 text-blue-400" />,
     },
     {

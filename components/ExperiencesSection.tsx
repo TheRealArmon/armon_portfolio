@@ -4,36 +4,35 @@ import { ExperienceItem } from "./ExperienceItem";
 
 export function ExperiencesSection() {
   const experiences = [
-    // {
-    //   company: "Norske Helsenett",
-    //   location: "Oslo",
-    //   position: "Kubernetes developer",
-    //   date: "March 2025 - Present",
-    //   description:
-    //     "Responsible for moving microservices onto Kubernetes.",
-    //   showDescription: false,
-    //   responsibilities: [
-    //     "ArgoCD",
-    //     "Prometheus",
-    //     "CI/CD",
-    //     "Kubernetes",
-    //     "Linux",
-    //   ],
-    // },
+    {
+      company: "Norske Helsenett",
+      location: "Oslo",
+      position: "Platform engineer",
+      date: "March 2025 - Present",
+      description: "Doing super-interesting work, i promise!!:)",
+      showDescription: true,
+      responsibilities: [
+        "Kubernetes",
+        "ArgoCD",
+        "Prometheus",
+        "Grafana",
+        "CI/CD",
+      ],
+    },
     {
       company: "Sopra Steria",
       location: "Oslo",
-      position: "IT-Consultant",
-      date: "August 2023 - Present",
+      position: "Software developer",
+      date: "August 2023 - February 2025",
       description:
-        "Did back-end work for a start-up for half a year, then worked with creating AI applications for various customers.",
-      showDescription: false,
+        "Did back-end work for a start-up for half a year, then worked on creating AI applications.",
+      showDescription: true,
       responsibilities: [
         "Back-end development",
         "LLM web app development",
         "Python",
         "Azure",
-        "Also conducted technical interviews in Java and Python",
+        "Technical interviews in Java and Python",
       ],
     },
     {
@@ -41,7 +40,8 @@ export function ExperiencesSection() {
       location: "Oslo",
       position: "Machine learning internship",
       date: "June 2022 - July 2022",
-      description: "Had an internship.",
+      description:
+        "Had an internship where I got to do computer vision stuff in python using Yolo v5 and Deepsort for tracking:))",
       showDescription: true,
       responsibilities: ["Python", "Databricks", "Azure"],
     },

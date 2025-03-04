@@ -18,7 +18,7 @@ export function ExperienceItem({
   responsibilities,
 }: ExperienceItemProps) {
   return (
-    <div className="bg-[#1a1f2e] rounded-lg p-6 border-2 border-gray-700 hover:border-gray-600 border-opacity-50 w-[300px] min-h-[300px] flex flex-col justify-between">
+    <div className="bg-[#1a1f2e] rounded-lg p-6 border-2 border-gray-700 hover:border-gray-600 border-opacity-50 w-[340px] min-h-[300px] flex flex-col justify-between">
       <div>
         <h3 className="text-2xl font-bold">{company}</h3>
         <p className="text-gray-400 text-sm mb-2">
