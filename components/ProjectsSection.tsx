@@ -25,7 +25,7 @@ export function ProjectsSection() {
       role: "Amateur creator",
       description:
         "Calling myself a \"music producer\" would be wildly overselling, that's why I've written amateur creator instead!\
-        Spurred by sporadic bursts of inspiration, I keep coming back to this hobby.",
+        Spurred by sporadic bursts of inspiration, I keep coming back to this hobby(✿◡‿◡)",
       tags: ["hobby", "ableton"],
       icon: <Icons.SmileOutlined className="w-6 h-6 text-blue-400" />,
     },
